@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: heebo;
+    /* border: 1px solid black; */
 }
 
 .container{
@@ -65,7 +66,6 @@ ul li {
 
 /* bagian post */
 .post{
-    width: 1152px;
     display: flex;
     margin:auto;
     background-color: #EDF7FA;
@@ -175,4 +175,50 @@ ul li {
     font-size: 14px;
     color: #21243D;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    .container{
+        width: 100%;
+        /* padding: 0 5px; */
+    }
+
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero-gambar{
+        margin-bottom: 20px;
+    }
+
+    .hero-tulisan{
+        text-align: center;
+        width: 100%;
+    }
+
+    .post-badan{
+        display: flex;
+        flex-direction: column;
+    }
+    .fitur-isi{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        /* align-items: center; */
+    }
+
+    /* .fitur-isi-tulisan{
+        text-align: center;
+    }    */
+
+    .fitur-isi-gambar img{
+        width: 100%;
+    }
 }
